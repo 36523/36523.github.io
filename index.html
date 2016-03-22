@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+  {% for post in site.posts %}
+    <article>
+
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        <p>{{ post.excerpt }}</p>
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Shiko më shumë</a>
+    </article>
+  {% endfor %}
