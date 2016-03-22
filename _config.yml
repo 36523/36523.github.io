@@ -3,10 +3,6 @@ description: Web Developer from Somewhere
 url: http://36523.github.io
 baseurl: ""
 permalink: /:title/
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    # Use existing pygments syntax highlighting css
-    css_class: 'highlight'
 sass:
   style: :expanded # You might prefer to minify using :compressed
 gems:
