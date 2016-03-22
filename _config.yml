@@ -3,6 +3,11 @@ description: Web Developer from Somewhere
 url: http://36523.github.io
 baseurl: ""
 permalink: /:title/
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
 sass:
   style: :expanded # You might prefer to minify using :compressed
 gems:
