@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+  {% if page.excerpt %}
+    <meta name="description" content="{{ page.excerpt| strip_html }}" />
+    <meta property="og:description" content="{{ page.excerpt| strip_html }}" />
+    {% else %}
+    <meta name="description" content="{{ site.description }}">
+    <meta property="og:description" content="{{ site.description }}" />
+    {% endif %}
+  <meta name="author" content="{{ site.name }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/normalize.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/skeleton.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+  <div class="container">
+    
+    <header class="row">
+      <h3>{{ site.name }}</h3>
+      {{ site.description }}
+    </header>
+    
+    <nav class="row">
+      <a href="{{ site.baseurl }}">Kreu</a>
+      <a href="{{ site.baseurl }}/artikuj">Artikuj</a>
+      <a href="{{ site.baseurl }}/info">Info</a>
+    </nav>
+    
+    <hr>
+    
+    <section class="row">
+    
+    <div class="nine columns">
+      {{ content }}
+    </div>
+    
+    <aside class="three columns">
+      <ul>
+        <li><a href="#">Titulli i ketij artikulli eshte shume interesant</a></li>
+        <li><a href="#">Titulli i ketij artikulli eshte shume interesant</a></li>
+        <li><a href="#">Titulli i ketij artikulli eshte shume interesant</a></li>
+        <li><a href="#">Titulli i ketij artikulli eshte shume interesant</a></li>
+        <li><a href="#">Titulli i ketij artikulli eshte shume interesant</a></li>
+      </ul>
+    </aside>
+    
+    </section>
+    
+    <hr>
+    
+    <footer class="row">
+      <p>
+        Copyright @Skeleton 2016
+      </p>
+      asdasd
+    </footer>
+    
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
