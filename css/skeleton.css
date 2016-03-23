@@ -422,6 +422,11 @@ header {
   padding-top: 1rem;
 }
 
+header h3 {
+  margin: 0;
+  padding: 0;
+}
+
 nav {
   text-align: center;
   font-family: Lobster;
