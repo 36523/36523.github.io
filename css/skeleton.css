@@ -443,5 +443,9 @@ img {
 }
 
 hr {
-  background-color: #000;
+    height: 1px;
+    color: #ed1d61;
+    background: #ed1d61;
+    font-size: 0;
+    border: 0;
 }
